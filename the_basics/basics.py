@@ -2,7 +2,11 @@
 
 def foo(a,b = 3):
     return a - b 
-print(foo(a =10)) 
+
+
+
+
+
 
 
 ########List comprehension############
