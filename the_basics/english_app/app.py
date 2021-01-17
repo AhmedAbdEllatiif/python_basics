@@ -2,12 +2,14 @@ import json
 from difflib import SequenceMatcher 
 from difflib import get_close_matches
 
+# load the data from json file
 data = json.load(open('files/data.json'))
 
-
-
+# function to get the defenition of the word
 def translate(word):
+    # convert 
     word = word.lower()
+    
     if word in data.keys():
          return data[word]
      
