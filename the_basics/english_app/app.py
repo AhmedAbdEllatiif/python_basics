@@ -16,6 +16,10 @@ def translate(word):
     if word in data.keys():
          return data[word]
      
+    # Check if the word.title matches and data key like(egypt)
+    elif word.title() in data.keys():
+        return data[word.title()]
+     
     # check if the word match any word in the data
     elif len( get_close_matches(word,data.keys())) > 0:
          matchedWord = get_close_matches(word,data.keys(),cutoff= 0.8)[0]
