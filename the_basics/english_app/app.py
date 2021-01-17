@@ -8,13 +8,17 @@ data = json.load(open('files/data.json'))
 # function to get the defenition of the word
 def translate(word):
     # convert the word to lowre case 
-    word = word.lower()
+   
     global matchedWord 
     matchedWord = ''
     
     # check if the word already in the data
-    if word in data.keys():
+    if word.lower() in data.keys():
          return data[word]
+     
+   # Check if the word.upper matches and data key like(USA)
+    if word.upper() in data.keys():
+         return data[word.upper()]
      
     # Check if the word.title matches and data key like(egypt)
     elif word.title() in data.keys():
