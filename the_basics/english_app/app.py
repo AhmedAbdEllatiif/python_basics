@@ -7,12 +7,16 @@ data = json.load(open('files/data.json'))
 
 # function to get the defenition of the word
 def translate(word):
-    # convert 
+    # convert the word to lowre case 
     word = word.lower()
+    global matchedWord 
+    matchedWord = ''
     
+    # check if the word already in the data
     if word in data.keys():
          return data[word]
      
+    # check if the word match any word in the data
     elif len( get_close_matches(word,data.keys())) > 0:
          matchedWord = get_close_matches(word,data.keys(),cutoff= 0.8)[0]
          userInput = input( "Did you mean (%s) instead of (%s) ?  If yes press Y or not press N: " %(matchedWord,word))
@@ -23,11 +27,32 @@ def translate(word):
          else:
              return '__!__ fuck ur self before somebody did...Or...Search for a doggy __!___'
         
-            
+    # fuck the user        
     else:
          return  ">>>>> Fuck __!__ you man, what the hell you just entered <<<<<<<<<"
 
+
+# input by user
 word = input("Search For a word: ")
 
 
-print(translate(word))
+# Data returned from the function
+wordData = translate(word)
+
+
+# To print the corrent word 
+if matchedWord != '':
+    print('>>>> {} <<<<: '.format(matchedWord.capitalize()))
+else:
+    print('>>>> {} <<<<: '.format(word.capitalize()))
+   
+   
+# print the data     
+if isinstance(wordData,str): 
+    print(wordData)
+else:
+    for index,line in enumerate(wordData):
+        print(line)
+        if(index == len(wordData) - 1):
+            print('\n')
+
