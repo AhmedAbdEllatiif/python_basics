@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c11e8a73ad704360bbd08ead0bc18bef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c11e8a73ad704360bbd08ead0bc18bef" ></div>
+        
+</body>
+<script>    
+    
+            var map_c11e8a73ad704360bbd08ead0bc18bef = L.map(
+                "map_c11e8a73ad704360bbd08ead0bc18bef",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_100c7fc04f0343b6a6c953f6be69dd4f = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c11e8a73ad704360bbd08ead0bc18bef);
+        
+    
+            var feature_group_ff402e5333744eb7b2e5b276e4e9217f = L.featureGroup(
+                {}
+            ).addTo(map_c11e8a73ad704360bbd08ead0bc18bef);
+        
+    
+            var circle_marker_03e2df1e9aa54aa3aca8a09e0c360079 = L.circleMarker(
+                [48.7767982, -121.810997],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_5dc664fd44c241b3b2fb8ec0044dfbde = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_d39b6b0073094dc29ea355a739a1c0b6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+QmFrZXI6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBCYWtlciZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogQmFrZXI8YnI+RWxldmF0aW9uOiAzMjg1LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ4Ljc3Njc5ODIgLCAtMTIxLjgxMDk5N10=" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_5dc664fd44c241b3b2fb8ec0044dfbde.setContent(i_frame_d39b6b0073094dc29ea355a739a1c0b6);
+        
+
+        circle_marker_03e2df1e9aa54aa3aca8a09e0c360079.bindPopup(popup_5dc664fd44c241b3b2fb8ec0044dfbde)
+        ;
+
+        
+    
+    
+            circle_marker_03e2df1e9aa54aa3aca8a09e0c360079.bindTooltip(
+                `<div>
+                     Volcanic: Baker
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_13829c9a74284eb083748b35e4090e60 = L.circleMarker(
+                [48.1118011, -121.1110001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_083936af9cea4ef0a6ebee5b99226a47 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_6fb68488eba04217b82c43a423b012cb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+R2xhY2llciBQZWFrOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgR2xhY2llciBQZWFrJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBHbGFjaWVyIFBlYWs8YnI+RWxldmF0aW9uOiAzMjEzLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ4LjExMTgwMTEgLCAtMTIxLjExMTAwMDFd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_083936af9cea4ef0a6ebee5b99226a47.setContent(i_frame_6fb68488eba04217b82c43a423b012cb);
+        
+
+        circle_marker_13829c9a74284eb083748b35e4090e60.bindPopup(popup_083936af9cea4ef0a6ebee5b99226a47)
+        ;
+
+        
+    
+    
+            circle_marker_13829c9a74284eb083748b35e4090e60.bindTooltip(
+                `<div>
+                     Volcanic: Glacier Peak
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_919a3feb0cb145e5b69aee4d35caa126 = L.circleMarker(
+                [46.8698006, -121.7509995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_5f50f244d8764195bb3a53eb6639e36b = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_134ec2ea2a34472b9ed820b453fd0394 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+UmFpbmllcjo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIFJhaW5pZXImdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IFJhaW5pZXI8YnI+RWxldmF0aW9uOiA0MzkyLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ2Ljg2OTgwMDYgLCAtMTIxLjc1MDk5OTVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_5f50f244d8764195bb3a53eb6639e36b.setContent(i_frame_134ec2ea2a34472b9ed820b453fd0394);
+        
+
+        circle_marker_919a3feb0cb145e5b69aee4d35caa126.bindPopup(popup_5f50f244d8764195bb3a53eb6639e36b)
+        ;
+
+        
+    
+    
+            circle_marker_919a3feb0cb145e5b69aee4d35caa126.bindTooltip(
+                `<div>
+                     Volcanic: Rainier
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7ecb848f7b24436a9c256ba3c4b9048b = L.circleMarker(
+                [46.1997986, -122.1809998],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_07c27c2b7a4b4bab98c3dfa59604aed9 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_26e03ebace6041ca988c1385274a5f40 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+U3QuIEhlbGVuczo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIFN0LiBIZWxlbnMmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IFN0LiBIZWxlbnM8YnI+RWxldmF0aW9uOiAyNTQ5LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ2LjE5OTc5ODYgLCAtMTIyLjE4MDk5OThd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_07c27c2b7a4b4bab98c3dfa59604aed9.setContent(i_frame_26e03ebace6041ca988c1385274a5f40);
+        
+
+        circle_marker_7ecb848f7b24436a9c256ba3c4b9048b.bindPopup(popup_07c27c2b7a4b4bab98c3dfa59604aed9)
+        ;
+
+        
+    
+    
+            circle_marker_7ecb848f7b24436a9c256ba3c4b9048b.bindTooltip(
+                `<div>
+                     Volcanic: St. Helens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_127f5c2f99f440fc8c9469dd93451370 = L.circleMarker(
+                [46.2057991, -121.4909973],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_3590ca2e45fb49bc9e78c7af08c31b60 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_7dc97265b1174c4191ba043456b28d29 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+QWRhbXM6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBBZGFtcyZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogQWRhbXM8YnI+RWxldmF0aW9uOiAzNzQyLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ2LjIwNTc5OTEgLCAtMTIxLjQ5MDk5NzNd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_3590ca2e45fb49bc9e78c7af08c31b60.setContent(i_frame_7dc97265b1174c4191ba043456b28d29);
+        
+
+        circle_marker_127f5c2f99f440fc8c9469dd93451370.bindPopup(popup_3590ca2e45fb49bc9e78c7af08c31b60)
+        ;
+
+        
+    
+    
+            circle_marker_127f5c2f99f440fc8c9469dd93451370.bindTooltip(
+                `<div>
+                     Volcanic: Adams
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ce2ff761ca224016b79962d9ac8b1b24 = L.circleMarker(
+                [45.8797989, -122.0810013],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_57c38c06d7094aca962ae5e427b3adeb = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_23838953ecde4794882538729db76e76 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+V2VzdCBDcmF0ZXI6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBXZXN0IENyYXRlciZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogV2VzdCBDcmF0ZXI8YnI+RWxldmF0aW9uOiAxMzI5LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ1Ljg3OTc5ODkgLCAtMTIyLjA4MTAwMTNd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_57c38c06d7094aca962ae5e427b3adeb.setContent(i_frame_23838953ecde4794882538729db76e76);
+        
+
+        circle_marker_ce2ff761ca224016b79962d9ac8b1b24.bindPopup(popup_57c38c06d7094aca962ae5e427b3adeb)
+        ;
+
+        
+    
+    
+            circle_marker_ce2ff761ca224016b79962d9ac8b1b24.bindTooltip(
+                `<div>
+                     Volcanic: West Crater
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a3cb41280e8d4385aacb1fc8b3874086 = L.circleMarker(
+                [45.9297981, -121.8209991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_ca7edfcd096e45da8476ff3e1068d50a = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_f46ee7be6f204e5daafc0648c01ac1ee = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+SW5kaWFuIEhlYXZlbjo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIEluZGlhbiBIZWF2ZW4mdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IEluZGlhbiBIZWF2ZW48YnI+RWxldmF0aW9uOiAxODA2LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ1LjkyOTc5ODEgLCAtMTIxLjgyMDk5OTFd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_ca7edfcd096e45da8476ff3e1068d50a.setContent(i_frame_f46ee7be6f204e5daafc0648c01ac1ee);
+        
+
+        circle_marker_a3cb41280e8d4385aacb1fc8b3874086.bindPopup(popup_ca7edfcd096e45da8476ff3e1068d50a)
+        ;
+
+        
+    
+    
+            circle_marker_a3cb41280e8d4385aacb1fc8b3874086.bindTooltip(
+                `<div>
+                     Volcanic: Indian Heaven
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_961157779a7c4cd4a06c9b83b7307853 = L.circleMarker(
+                [45.3737984, -121.6910019],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_38e9d6037b1848e59abe329d3e0118e2 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_4dec7498729540edb9b6201df8425e2b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+SG9vZDo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIEhvb2QmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IEhvb2Q8YnI+RWxldmF0aW9uOiAzNDI2LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ1LjM3Mzc5ODQgLCAtMTIxLjY5MTAwMTld" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_38e9d6037b1848e59abe329d3e0118e2.setContent(i_frame_4dec7498729540edb9b6201df8425e2b);
+        
+
+        circle_marker_961157779a7c4cd4a06c9b83b7307853.bindPopup(popup_38e9d6037b1848e59abe329d3e0118e2)
+        ;
+
+        
+    
+    
+            circle_marker_961157779a7c4cd4a06c9b83b7307853.bindTooltip(
+                `<div>
+                     Volcanic: Hood
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_beab6c273bf14f7b897ac4cc77844e64 = L.circleMarker(
+                [44.6917992, -121.8010025],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_72cae1fd15264030bf8add1bc17fe639 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_4e05c35ab8a040faa04ba6aa53202da7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+SmVmZmVyc29uOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgSmVmZmVyc29uJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBKZWZmZXJzb248YnI+RWxldmF0aW9uOiAzMTk5LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ0LjY5MTc5OTIgLCAtMTIxLjgwMTAwMjVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_72cae1fd15264030bf8add1bc17fe639.setContent(i_frame_4e05c35ab8a040faa04ba6aa53202da7);
+        
+
+        circle_marker_beab6c273bf14f7b897ac4cc77844e64.bindPopup(popup_72cae1fd15264030bf8add1bc17fe639)
+        ;
+
+        
+    
+    
+            circle_marker_beab6c273bf14f7b897ac4cc77844e64.bindTooltip(
+                `<div>
+                     Volcanic: Jefferson
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2327112bd2204ad5930b9bb6f8eba35e = L.circleMarker(
+                [44.4197998, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_4f0f3867e7f649d1842d7bd3a75112a0 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_330291cebb7544149dc6c8f951d3edc3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Qmx1ZSBMYWtlIENyYXRlcjo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIEJsdWUgTGFrZSBDcmF0ZXImdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IEJsdWUgTGFrZSBDcmF0ZXI8YnI+RWxldmF0aW9uOiAxMjMwLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ0LjQxOTc5OTggLCAtMTIxLjc3MTAwMzdd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_4f0f3867e7f649d1842d7bd3a75112a0.setContent(i_frame_330291cebb7544149dc6c8f951d3edc3);
+        
+
+        circle_marker_2327112bd2204ad5930b9bb6f8eba35e.bindPopup(popup_4f0f3867e7f649d1842d7bd3a75112a0)
+        ;
+
+        
+    
+    
+            circle_marker_2327112bd2204ad5930b9bb6f8eba35e.bindTooltip(
+                `<div>
+                     Volcanic: Blue Lake Crater
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bdb767959b804963945bb7037aef099f = L.circleMarker(
+                [44.3797989, -121.9309998],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_9c46ac0ece4f4a949ff711c6b299faea = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_ec2989fb86c0477da751c030daed5361 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+U2FuZCBNb3VudGFpbiBGaWVsZDo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIFNhbmQgTW91bnRhaW4gRmllbGQmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IFNhbmQgTW91bnRhaW4gRmllbGQ8YnI+RWxldmF0aW9uOiAxNjY0LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ0LjM3OTc5ODkgLCAtMTIxLjkzMDk5OThd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_9c46ac0ece4f4a949ff711c6b299faea.setContent(i_frame_ec2989fb86c0477da751c030daed5361);
+        
+
+        circle_marker_bdb767959b804963945bb7037aef099f.bindPopup(popup_9c46ac0ece4f4a949ff711c6b299faea)
+        ;
+
+        
+    
+    
+            circle_marker_bdb767959b804963945bb7037aef099f.bindTooltip(
+                `<div>
+                     Volcanic: Sand Mountain Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fdd2d7ad4f834da998f0bbef93079cd4 = L.circleMarker(
+                [44.3317986, -121.8310013],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_5f72d155db4a454c978805a528e6ffde = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_1ff7da448e6a4c7cb8739df6a0d9da95 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+V2FzaGluZ3Rvbjo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIFdhc2hpbmd0b24mdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IFdhc2hpbmd0b248YnI+RWxldmF0aW9uOiAyMzc2LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ0LjMzMTc5ODYgLCAtMTIxLjgzMTAwMTNd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_5f72d155db4a454c978805a528e6ffde.setContent(i_frame_1ff7da448e6a4c7cb8739df6a0d9da95);
+        
+
+        circle_marker_fdd2d7ad4f834da998f0bbef93079cd4.bindPopup(popup_5f72d155db4a454c978805a528e6ffde)
+        ;
+
+        
+    
+    
+            circle_marker_fdd2d7ad4f834da998f0bbef93079cd4.bindTooltip(
+                `<div>
+                     Volcanic: Washington
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_494a9397798048acb88af24f4eaea4dd = L.circleMarker(
+                [44.2848015, -121.8410034],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_43d9ca6b8e034965b83d1553f77f0d70 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_5a3a5889417448c5a0c271985de3699c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+QmVsa25hcDo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIEJlbGtuYXAmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IEJlbGtuYXA8YnI+RWxldmF0aW9uOiAyMDk1LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ0LjI4NDgwMTUgLCAtMTIxLjg0MTAwMzRd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_43d9ca6b8e034965b83d1553f77f0d70.setContent(i_frame_5a3a5889417448c5a0c271985de3699c);
+        
+
+        circle_marker_494a9397798048acb88af24f4eaea4dd.bindPopup(popup_43d9ca6b8e034965b83d1553f77f0d70)
+        ;
+
+        
+    
+    
+            circle_marker_494a9397798048acb88af24f4eaea4dd.bindTooltip(
+                `<div>
+                     Volcanic: Belknap
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b685bb3677264286af1d03470c2f046e = L.circleMarker(
+                [44.1697998, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_f6698a5ca5a1455e8a2f4053e33b12c3 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_9292ab0fbc9c4a9399f6b0d4b99de3d5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Tm9ydGggU2lzdGVyIEZpZWxkOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgTm9ydGggU2lzdGVyIEZpZWxkJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBOb3J0aCBTaXN0ZXIgRmllbGQ8YnI+RWxldmF0aW9uOiAzMDc0LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ0LjE2OTc5OTggLCAtMTIxLjc3MTAwMzdd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_f6698a5ca5a1455e8a2f4053e33b12c3.setContent(i_frame_9292ab0fbc9c4a9399f6b0d4b99de3d5);
+        
+
+        circle_marker_b685bb3677264286af1d03470c2f046e.bindPopup(popup_f6698a5ca5a1455e8a2f4053e33b12c3)
+        ;
+
+        
+    
+    
+            circle_marker_b685bb3677264286af1d03470c2f046e.bindTooltip(
+                `<div>
+                     Volcanic: North Sister Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_004f912d191b4519888e7822846e7a55 = L.circleMarker(
+                [44.0998001, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_3dca87c7f6e043828efe8ebf5a9f8527 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_20c48f9ed5ce497f8e05657ee93c053a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+U291dGggU2lzdGVyOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgU291dGggU2lzdGVyJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBTb3V0aCBTaXN0ZXI8YnI+RWxldmF0aW9uOiAzMTU3LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ0LjA5OTgwMDEgLCAtMTIxLjc3MTAwMzdd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_3dca87c7f6e043828efe8ebf5a9f8527.setContent(i_frame_20c48f9ed5ce497f8e05657ee93c053a);
+        
+
+        circle_marker_004f912d191b4519888e7822846e7a55.bindPopup(popup_3dca87c7f6e043828efe8ebf5a9f8527)
+        ;
+
+        
+    
+    
+            circle_marker_004f912d191b4519888e7822846e7a55.bindTooltip(
+                `<div>
+                     Volcanic: South Sister
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f01dbcf32f3c41cab98c1bce591765bd = L.circleMarker(
+                [43.9788017, -121.6809998],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_1e54ebe8bd6247e3a552ca351c743bd1 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_9320f5affcc14c8f90c05bbac0390b16 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+QmFjaGVsb3I6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBCYWNoZWxvciZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogQmFjaGVsb3I8YnI+RWxldmF0aW9uOiAyNzYzLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjk3ODgwMTcgLCAtMTIxLjY4MDk5OThd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_1e54ebe8bd6247e3a552ca351c743bd1.setContent(i_frame_9320f5affcc14c8f90c05bbac0390b16);
+        
+
+        circle_marker_f01dbcf32f3c41cab98c1bce591765bd.bindPopup(popup_1e54ebe8bd6247e3a552ca351c743bd1)
+        ;
+
+        
+    
+    
+            circle_marker_f01dbcf32f3c41cab98c1bce591765bd.bindTooltip(
+                `<div>
+                     Volcanic: Bachelor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b743e4f2bd114792a18aa14893770a84 = L.circleMarker(
+                [43.7218018, -121.2210007],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_a2ef7c2ea9c3452e86c5359adfc69145 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_087fef3e926d4b4e92628f72382c3b76 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+TmV3YmVycnkgVm9sY2Fubzo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIE5ld2JlcnJ5IFZvbGNhbm8mdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IE5ld2JlcnJ5IFZvbGNhbm88YnI+RWxldmF0aW9uOiAyNDM0LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjcyMTgwMTggLCAtMTIxLjIyMTAwMDdd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_a2ef7c2ea9c3452e86c5359adfc69145.setContent(i_frame_087fef3e926d4b4e92628f72382c3b76);
+        
+
+        circle_marker_b743e4f2bd114792a18aa14893770a84.bindPopup(popup_a2ef7c2ea9c3452e86c5359adfc69145)
+        ;
+
+        
+    
+    
+            circle_marker_b743e4f2bd114792a18aa14893770a84.bindTooltip(
+                `<div>
+                     Volcanic: Newberry Volcano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6293ac6107514de383a8639451b70ca5 = L.circleMarker(
+                [43.5698013, -121.8209991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_f91e628eaada482ea222efdb6c4a8d76 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_f6af19915a6244f9952f46b0cecd032c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+RGF2aXMgTGFrZTo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIERhdmlzIExha2UmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IERhdmlzIExha2U8YnI+RWxldmF0aW9uOiAyMTYzLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjU2OTgwMTMgLCAtMTIxLjgyMDk5OTFd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_f91e628eaada482ea222efdb6c4a8d76.setContent(i_frame_f6af19915a6244f9952f46b0cecd032c);
+        
+
+        circle_marker_6293ac6107514de383a8639451b70ca5.bindPopup(popup_f91e628eaada482ea222efdb6c4a8d76)
+        ;
+
+        
+    
+    
+            circle_marker_6293ac6107514de383a8639451b70ca5.bindTooltip(
+                `<div>
+                     Volcanic: Davis Lake
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cfc0598c1b9f4759a55b983549e7d917 = L.circleMarker(
+                [43.5119019, -120.8610001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_0ae2cdd93ba5497aaae96a26aa07c9e0 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_4d20eadb118c453d9c6d7a008c3008b7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+RGV2aWxzIEdhcmRlbjo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIERldmlscyBHYXJkZW4mdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IERldmlscyBHYXJkZW48YnI+RWxldmF0aW9uOiAxNjk4LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjUxMTkwMTkgLCAtMTIwLjg2MTAwMDFd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_0ae2cdd93ba5497aaae96a26aa07c9e0.setContent(i_frame_4d20eadb118c453d9c6d7a008c3008b7);
+        
+
+        circle_marker_cfc0598c1b9f4759a55b983549e7d917.bindPopup(popup_0ae2cdd93ba5497aaae96a26aa07c9e0)
+        ;
+
+        
+    
+    
+            circle_marker_cfc0598c1b9f4759a55b983549e7d917.bindTooltip(
+                `<div>
+                     Volcanic: Devils Garden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a2f7e4dbe6e24dc69536ee9d97a055bc = L.circleMarker(
+                [43.240799, -122.1009979],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_6b09afeccdd1428280839fd84fee57f1 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_d8f4f92f57194e2c80e51c80664d5252 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Q2lubmFtb24gQnV0dGU6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBDaW5uYW1vbiBCdXR0ZSZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogQ2lubmFtb24gQnV0dGU8YnI+RWxldmF0aW9uOiAxOTU2LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjI0MDc5OSAsIC0xMjIuMTAwOTk3OV0=" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_6b09afeccdd1428280839fd84fee57f1.setContent(i_frame_d8f4f92f57194e2c80e51c80664d5252);
+        
+
+        circle_marker_a2f7e4dbe6e24dc69536ee9d97a055bc.bindPopup(popup_6b09afeccdd1428280839fd84fee57f1)
+        ;
+
+        
+    
+    
+            circle_marker_a2f7e4dbe6e24dc69536ee9d97a055bc.bindTooltip(
+                `<div>
+                     Volcanic: Cinnamon Butte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b438511ca62f4938b81bcc758be30b06 = L.circleMarker(
+                [43.4719009, -120.7509995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_472309f0be7d4d0a9116c8b8fff1aec2 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_d64419c98789476fae59e44eaa591397 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+U3F1YXcgUmlkZ2UgTGF2YSBGaWVsZDo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIFNxdWF3IFJpZGdlIExhdmEgRmllbGQmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IFNxdWF3IFJpZGdlIExhdmEgRmllbGQ8YnI+RWxldmF0aW9uOiAxNzExLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjQ3MTkwMDkgLCAtMTIwLjc1MDk5OTVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_472309f0be7d4d0a9116c8b8fff1aec2.setContent(i_frame_d64419c98789476fae59e44eaa591397);
+        
+
+        circle_marker_b438511ca62f4938b81bcc758be30b06.bindPopup(popup_472309f0be7d4d0a9116c8b8fff1aec2)
+        ;
+
+        
+    
+    
+            circle_marker_b438511ca62f4938b81bcc758be30b06.bindTooltip(
+                `<div>
+                     Volcanic: Squaw Ridge Lava Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1bd11c2ecb744e8d97809fa70749d9e6 = L.circleMarker(
+                [43.3609009, -120.6610031],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_5430bc52f3a946ee8f803fe29f9b5f0e = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_0fc84383def54c9a9a7fad7f341ba5ac = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Rm91ciBDcmF0ZXJzIExhdmEgRmllbGQ6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBGb3VyIENyYXRlcnMgTGF2YSBGaWVsZCZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogRm91ciBDcmF0ZXJzIExhdmEgRmllbGQ8YnI+RWxldmF0aW9uOiAxNTAxLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjM2MDkwMDkgLCAtMTIwLjY2MTAwMzFd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_5430bc52f3a946ee8f803fe29f9b5f0e.setContent(i_frame_0fc84383def54c9a9a7fad7f341ba5ac);
+        
+
+        circle_marker_1bd11c2ecb744e8d97809fa70749d9e6.bindPopup(popup_5430bc52f3a946ee8f803fe29f9b5f0e)
+        ;
+
+        
+    
+    
+            circle_marker_1bd11c2ecb744e8d97809fa70749d9e6.bindTooltip(
+                `<div>
+                     Volcanic: Four Craters Lava Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a947a8830fd846a7ac2633eaa585411f = L.circleMarker(
+                [42.9299011, -122.1210022],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_a2f9a3ff96b34c4db56af5e603c10160 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_aa5adf59b505479d993ad4474fa2f171 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Q3JhdGVyIExha2U6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBDcmF0ZXIgTGFrZSZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogQ3JhdGVyIExha2U8YnI+RWxldmF0aW9uOiAyNDg3LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQyLjkyOTkwMTEgLCAtMTIyLjEyMTAwMjJd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_a2f9a3ff96b34c4db56af5e603c10160.setContent(i_frame_aa5adf59b505479d993ad4474fa2f171);
+        
+
+        circle_marker_a947a8830fd846a7ac2633eaa585411f.bindPopup(popup_a2f9a3ff96b34c4db56af5e603c10160)
+        ;
+
+        
+    
+    
+            circle_marker_a947a8830fd846a7ac2633eaa585411f.bindTooltip(
+                `<div>
+                     Volcanic: Crater Lake
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8fbffe4615754988910944e6e4bb5582 = L.circleMarker(
+                [44.4299011, -110.6709976],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_2d25b40f038445ab866aaa585f0ed429 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_f5e0bbdb90aa4bf3b09650407869c674 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+WWVsbG93c3RvbmU6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBZZWxsb3dzdG9uZSZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogWWVsbG93c3RvbmU8YnI+RWxldmF0aW9uOiAyODA1LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQ0LjQyOTkwMTEgLCAtMTEwLjY3MDk5NzZd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_2d25b40f038445ab866aaa585f0ed429.setContent(i_frame_f5e0bbdb90aa4bf3b09650407869c674);
+        
+
+        circle_marker_8fbffe4615754988910944e6e4bb5582.bindPopup(popup_2d25b40f038445ab866aaa585f0ed429)
+        ;
+
+        
+    
+    
+            circle_marker_8fbffe4615754988910944e6e4bb5582.bindTooltip(
+                `<div>
+                     Volcanic: Yellowstone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9884a2964ab645c6a60da767f8c5f9ed = L.circleMarker(
+                [43.0998993, -118.7509995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_376b72adbdec490fa796bffd4fcdff84 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_037d5b5404e048329e60847278fd3b08 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+RGlhbW9uZCBDcmF0ZXJzOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgRGlhbW9uZCBDcmF0ZXJzJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBEaWFtb25kIENyYXRlcnM8YnI+RWxldmF0aW9uOiAxNDM1LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjA5OTg5OTMgLCAtMTE4Ljc1MDk5OTVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_376b72adbdec490fa796bffd4fcdff84.setContent(i_frame_037d5b5404e048329e60847278fd3b08);
+        
+
+        circle_marker_9884a2964ab645c6a60da767f8c5f9ed.bindPopup(popup_376b72adbdec490fa796bffd4fcdff84)
+        ;
+
+        
+    
+    
+            circle_marker_9884a2964ab645c6a60da767f8c5f9ed.bindTooltip(
+                `<div>
+                     Volcanic: Diamond Craters
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8c9c4f87614e47a99fd49768b6b2689a = L.circleMarker(
+                [43.1498985, -117.4710007],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_e21e88482c9147339aa1a02ade9a0c65 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_86b8ca81be4e4b64b61b409a3bb9eea9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Sm9yZGFuIENyYXRlcnM6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBKb3JkYW4gQ3JhdGVycyZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogSm9yZGFuIENyYXRlcnM8YnI+RWxldmF0aW9uOiAxNDczLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjE0OTg5ODUgLCAtMTE3LjQ3MTAwMDdd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_e21e88482c9147339aa1a02ade9a0c65.setContent(i_frame_86b8ca81be4e4b64b61b409a3bb9eea9);
+        
+
+        circle_marker_8c9c4f87614e47a99fd49768b6b2689a.bindPopup(popup_e21e88482c9147339aa1a02ade9a0c65)
+        ;
+
+        
+    
+    
+            circle_marker_8c9c4f87614e47a99fd49768b6b2689a.bindTooltip(
+                `<div>
+                     Volcanic: Jordan Craters
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_15d91e95ca6f460cb91dd59b77a9e3bc = L.circleMarker(
+                [42.9999008, -117.8010025],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_dcfdb9351a054d6aadc1d7184d06c2bb = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_f5523b11debc410a8d4d98be7ce5dfd3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+U2FkZGxlIEJ1dHRlOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgU2FkZGxlIEJ1dHRlJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBTYWRkbGUgQnV0dGU8YnI+RWxldmF0aW9uOiAxNzAwLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQyLjk5OTkwMDggLCAtMTE3LjgwMTAwMjVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_dcfdb9351a054d6aadc1d7184d06c2bb.setContent(i_frame_f5523b11debc410a8d4d98be7ce5dfd3);
+        
+
+        circle_marker_15d91e95ca6f460cb91dd59b77a9e3bc.bindPopup(popup_dcfdb9351a054d6aadc1d7184d06c2bb)
+        ;
+
+        
+    
+    
+            circle_marker_15d91e95ca6f460cb91dd59b77a9e3bc.bindTooltip(
+                `<div>
+                     Volcanic: Saddle Butte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ccf84ba73d9c492ea31005f3054a165a = L.circleMarker(
+                [43.419899, -113.5009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_6be2cffd4ecc432eb70f2004190c7919 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_1d5d53e2849f440ea0dc0516b2233d77 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Q3JhdGVycyBvZiB0aGUgTW9vbjo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIENyYXRlcnMgb2YgdGhlIE1vb24mdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IENyYXRlcnMgb2YgdGhlIE1vb248YnI+RWxldmF0aW9uOiAyMDA1LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjQxOTg5OSAsIC0xMTMuNTAwOTk5NV0=" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_6be2cffd4ecc432eb70f2004190c7919.setContent(i_frame_1d5d53e2849f440ea0dc0516b2233d77);
+        
+
+        circle_marker_ccf84ba73d9c492ea31005f3054a165a.bindPopup(popup_6be2cffd4ecc432eb70f2004190c7919)
+        ;
+
+        
+    
+    
+            circle_marker_ccf84ba73d9c492ea31005f3054a165a.bindTooltip(
+                `<div>
+                     Volcanic: Craters of the Moon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4777e38d4ceb414281568fd5886ea135 = L.circleMarker(
+                [43.4999008, -112.4509964],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_9fb6de462f3a4d42b1eba7b31bfa261b = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_8ac910b7c5ef4fda80b1917cabfac149 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+SGVsbCBIYWxmIEFjcmU6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBIZWxsIEhhbGYgQWNyZSZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogSGVsbCBIYWxmIEFjcmU8YnI+RWxldmF0aW9uOiAxNjMxLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjQ5OTkwMDggLCAtMTEyLjQ1MDk5NjRd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_9fb6de462f3a4d42b1eba7b31bfa261b.setContent(i_frame_8ac910b7c5ef4fda80b1917cabfac149);
+        
+
+        circle_marker_4777e38d4ceb414281568fd5886ea135.bindPopup(popup_9fb6de462f3a4d42b1eba7b31bfa261b)
+        ;
+
+        
+    
+    
+            circle_marker_4777e38d4ceb414281568fd5886ea135.bindTooltip(
+                `<div>
+                     Volcanic: Hell Half Acre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9241ab5c0cf54024b6eb5da5bb76dd8c = L.circleMarker(
+                [43.1799011, -114.3509979],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_9379fc7848044a9cabf274267a99d021 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_74faa88fb20d4056bb960dffece7facd = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+U2hvc2hvbmUgTGF2YSBGaWVsZDo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIFNob3Nob25lIExhdmEgRmllbGQmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IFNob3Nob25lIExhdmEgRmllbGQ8YnI+RWxldmF0aW9uOiAxNDc4LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQzLjE3OTkwMTEgLCAtMTE0LjM1MDk5Nzld" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_9379fc7848044a9cabf274267a99d021.setContent(i_frame_74faa88fb20d4056bb960dffece7facd);
+        
+
+        circle_marker_9241ab5c0cf54024b6eb5da5bb76dd8c.bindPopup(popup_9379fc7848044a9cabf274267a99d021)
+        ;
+
+        
+    
+    
+            circle_marker_9241ab5c0cf54024b6eb5da5bb76dd8c.bindTooltip(
+                `<div>
+                     Volcanic: Shoshone Lava Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_54e4437df2814a609fcb2284033cfe31 = L.circleMarker(
+                [42.6058998, -117.5810013],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_b6d984a494cc422db38b1ff42ecc8ca6 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_cbb39af00a48450b9ae1a34c70710a93 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+SmFja2llcyBCdXR0ZTo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIEphY2tpZXMgQnV0dGUmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IEphY2tpZXMgQnV0dGU8YnI+RWxldmF0aW9uOiAxNDE4LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQyLjYwNTg5OTggLCAtMTE3LjU4MTAwMTNd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_b6d984a494cc422db38b1ff42ecc8ca6.setContent(i_frame_cbb39af00a48450b9ae1a34c70710a93);
+        
+
+        circle_marker_54e4437df2814a609fcb2284033cfe31.bindPopup(popup_b6d984a494cc422db38b1ff42ecc8ca6)
+        ;
+
+        
+    
+    
+            circle_marker_54e4437df2814a609fcb2284033cfe31.bindTooltip(
+                `<div>
+                     Volcanic: Jackies Butte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fe18bdf2dd9e4ef2a4887c7ff8203845 = L.circleMarker(
+                [41.5798988, -121.5709991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_beb1e99e062d4bc59586457b0cbccf45 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_8801c8478fbd40d182cbefb2b335dd13 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+TWVkaWNpbmUgTGFrZTo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIE1lZGljaW5lIExha2UmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IE1lZGljaW5lIExha2U8YnI+RWxldmF0aW9uOiAyNDEyLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQxLjU3OTg5ODggLCAtMTIxLjU3MDk5OTFd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_beb1e99e062d4bc59586457b0cbccf45.setContent(i_frame_8801c8478fbd40d182cbefb2b335dd13);
+        
+
+        circle_marker_fe18bdf2dd9e4ef2a4887c7ff8203845.bindPopup(popup_beb1e99e062d4bc59586457b0cbccf45)
+        ;
+
+        
+    
+    
+            circle_marker_fe18bdf2dd9e4ef2a4887c7ff8203845.bindTooltip(
+                `<div>
+                     Volcanic: Medicine Lake
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6529a7a0f7834f68b2522663096d7952 = L.circleMarker(
+                [42.8799019, -113.2210007],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_d1cd00e8cacc4063a5fab2b89b726c84 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_42a10c85419b497a8eec4105ab644feb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+V2FwaSBMYXZhIEZpZWxkOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgV2FwaSBMYXZhIEZpZWxkJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBXYXBpIExhdmEgRmllbGQ8YnI+RWxldmF0aW9uOiAxNjA0LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQyLjg3OTkwMTkgLCAtMTEzLjIyMTAwMDdd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_d1cd00e8cacc4063a5fab2b89b726c84.setContent(i_frame_42a10c85419b497a8eec4105ab644feb);
+        
+
+        circle_marker_6529a7a0f7834f68b2522663096d7952.bindPopup(popup_d1cd00e8cacc4063a5fab2b89b726c84)
+        ;
+
+        
+    
+    
+            circle_marker_6529a7a0f7834f68b2522663096d7952.bindTooltip(
+                `<div>
+                     Volcanic: Wapi Lava Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_898eda57021d440997ba69098d0891c3 = L.circleMarker(
+                [41.419899, -122.2009964],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_ce3dbcf3fa2846d49c9e6ab9ce9fa58a = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_2dec53ca018544fc8635f0f4a5e4798e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+U2hhc3RhOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgU2hhc3RhJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBTaGFzdGE8YnI+RWxldmF0aW9uOiA0MzE3LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQxLjQxOTg5OSAsIC0xMjIuMjAwOTk2NF0=" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_ce3dbcf3fa2846d49c9e6ab9ce9fa58a.setContent(i_frame_2dec53ca018544fc8635f0f4a5e4798e);
+        
+
+        circle_marker_898eda57021d440997ba69098d0891c3.bindPopup(popup_ce3dbcf3fa2846d49c9e6ab9ce9fa58a)
+        ;
+
+        
+    
+    
+            circle_marker_898eda57021d440997ba69098d0891c3.bindTooltip(
+                `<div>
+                     Volcanic: Shasta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8e33a49b7e214b8cbfa293671c1f58d4 = L.circleMarker(
+                [41.1778984, -121.4410019],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_16aeb865b9434017b6baf1dcb57b2b88 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_dc1e43928b7b49c29358fd3011965a17 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+QnJ1c2h5IEJ1dHRlOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgQnJ1c2h5IEJ1dHRlJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBCcnVzaHkgQnV0dGU8YnI+RWxldmF0aW9uOiAxMTc0LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQxLjE3Nzg5ODQgLCAtMTIxLjQ0MTAwMTld" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_16aeb865b9434017b6baf1dcb57b2b88.setContent(i_frame_dc1e43928b7b49c29358fd3011965a17);
+        
+
+        circle_marker_8e33a49b7e214b8cbfa293671c1f58d4.bindPopup(popup_16aeb865b9434017b6baf1dcb57b2b88)
+        ;
+
+        
+    
+    
+            circle_marker_8e33a49b7e214b8cbfa293671c1f58d4.bindTooltip(
+                `<div>
+                     Volcanic: Brushy Butte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e6014019d2d745d09cc1cf2e59b413fd = L.circleMarker(
+                [40.9548988, -121.3610001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_5bd2d54699794962a47f85039646a99f = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_1590946215c241078a10880db323de74 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+QmlnIENhdmU6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBCaWcgQ2F2ZSZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogQmlnIENhdmU8YnI+RWxldmF0aW9uOiAxMjU5LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQwLjk1NDg5ODggLCAtMTIxLjM2MTAwMDFd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_5bd2d54699794962a47f85039646a99f.setContent(i_frame_1590946215c241078a10880db323de74);
+        
+
+        circle_marker_e6014019d2d745d09cc1cf2e59b413fd.bindPopup(popup_5bd2d54699794962a47f85039646a99f)
+        ;
+
+        
+    
+    
+            circle_marker_e6014019d2d745d09cc1cf2e59b413fd.bindTooltip(
+                `<div>
+                     Volcanic: Big Cave
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c3687c74bd0499f89728bc948799373 = L.circleMarker(
+                [40.7798996, -121.6009979],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_79758b7f57ee4df08fbd2ab1a10e45b2 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_e9ec453f0c0b45a08870a5f8f16e12f7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+VHdpbiBCdXR0ZXM6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBUd2luIEJ1dHRlcyZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogVHdpbiBCdXR0ZXM8YnI+RWxldmF0aW9uOiAxNjMxLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQwLjc3OTg5OTYgLCAtMTIxLjYwMDk5Nzld" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_79758b7f57ee4df08fbd2ab1a10e45b2.setContent(i_frame_e9ec453f0c0b45a08870a5f8f16e12f7);
+        
+
+        circle_marker_4c3687c74bd0499f89728bc948799373.bindPopup(popup_79758b7f57ee4df08fbd2ab1a10e45b2)
+        ;
+
+        
+    
+    
+            circle_marker_4c3687c74bd0499f89728bc948799373.bindTooltip(
+                `<div>
+                     Volcanic: Twin Buttes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ebb9bdd5d58e4c6c84b460e803cfdedd = L.circleMarker(
+                [40.6799011, -121.5510025],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_21289313a67143d1a7ae48b653183d8c = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_e8dd55d1530641849e2986bed379bf84 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+VHVtYmxlIEJ1dHRlczo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIFR1bWJsZSBCdXR0ZXMmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IFR1bWJsZSBCdXR0ZXM8YnI+RWxldmF0aW9uOiAyMTkxLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQwLjY3OTkwMTEgLCAtMTIxLjU1MTAwMjVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_21289313a67143d1a7ae48b653183d8c.setContent(i_frame_e8dd55d1530641849e2986bed379bf84);
+        
+
+        circle_marker_ebb9bdd5d58e4c6c84b460e803cfdedd.bindPopup(popup_21289313a67143d1a7ae48b653183d8c)
+        ;
+
+        
+    
+    
+            circle_marker_ebb9bdd5d58e4c6c84b460e803cfdedd.bindTooltip(
+                `<div>
+                     Volcanic: Tumble Buttes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dc806c24e7be4b4eafff537ca09b4cb9 = L.circleMarker(
+                [40.6299019, -120.8310013],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_a08fab896d844da99547e506d6c51a73 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_f1f45ed276fa4ce8a47943336fe0e813 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+RWFnbGUgTGFrZSBGaWVsZDo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIEVhZ2xlIExha2UgRmllbGQmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IEVhZ2xlIExha2UgRmllbGQ8YnI+RWxldmF0aW9uOiAxNjUyLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQwLjYyOTkwMTkgLCAtMTIwLjgzMTAwMTNd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_a08fab896d844da99547e506d6c51a73.setContent(i_frame_f1f45ed276fa4ce8a47943336fe0e813);
+        
+
+        circle_marker_dc806c24e7be4b4eafff537ca09b4cb9.bindPopup(popup_a08fab896d844da99547e506d6c51a73)
+        ;
+
+        
+    
+    
+            circle_marker_dc806c24e7be4b4eafff537ca09b4cb9.bindTooltip(
+                `<div>
+                     Volcanic: Eagle Lake Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_68f472eed79f49d48bb05687b07b292b = L.circleMarker(
+                [40.4919014, -121.5009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_84f3922e31824d089343d0336db53533 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_7801be60ba734c54a0d8fc640443d487 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+TGFzc2VuIFZvbGMgQ2VudGVyOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgTGFzc2VuIFZvbGMgQ2VudGVyJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBMYXNzZW4gVm9sYyBDZW50ZXI8YnI+RWxldmF0aW9uOiAzMTg3LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzQwLjQ5MTkwMTQgLCAtMTIxLjUwMDk5OTVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_84f3922e31824d089343d0336db53533.setContent(i_frame_7801be60ba734c54a0d8fc640443d487);
+        
+
+        circle_marker_68f472eed79f49d48bb05687b07b292b.bindPopup(popup_84f3922e31824d089343d0336db53533)
+        ;
+
+        
+    
+    
+            circle_marker_68f472eed79f49d48bb05687b07b292b.bindTooltip(
+                `<div>
+                     Volcanic: Lassen Volc Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_257606fc031f4c6589dfbd0942f737b6 = L.circleMarker(
+                [38.9698982, -122.7710037],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_7fc6b71862274ed6a00ecb0d4356c4c0 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_46889d4949a54ad299faafdfba7185e2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Q2xlYXIgTGFrZTo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIENsZWFyIExha2UmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IENsZWFyIExha2U8YnI+RWxldmF0aW9uOiAxNDM5LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM4Ljk2OTg5ODIgLCAtMTIyLjc3MTAwMzdd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_7fc6b71862274ed6a00ecb0d4356c4c0.setContent(i_frame_46889d4949a54ad299faafdfba7185e2);
+        
+
+        circle_marker_257606fc031f4c6589dfbd0942f737b6.bindPopup(popup_7fc6b71862274ed6a00ecb0d4356c4c0)
+        ;
+
+        
+    
+    
+            circle_marker_257606fc031f4c6589dfbd0942f737b6.bindTooltip(
+                `<div>
+                     Volcanic: Clear Lake
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca1ebecd9a634c65826706fb7502a9e1 = L.circleMarker(
+                [39.3749008, -119.7210007],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_ba45a194cd6649fd983530277e23f343 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_5529e56b29b64a678d64b72d2e9bb5b8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+U3RlYW1ib2F0IFNwcmluZ3M6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBTdGVhbWJvYXQgU3ByaW5ncyZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogU3RlYW1ib2F0IFNwcmluZ3M8YnI+RWxldmF0aW9uOiAxNDE1LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM5LjM3NDkwMDggLCAtMTE5LjcyMTAwMDdd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_ba45a194cd6649fd983530277e23f343.setContent(i_frame_5529e56b29b64a678d64b72d2e9bb5b8);
+        
+
+        circle_marker_ca1ebecd9a634c65826706fb7502a9e1.bindPopup(popup_ba45a194cd6649fd983530277e23f343)
+        ;
+
+        
+    
+    
+            circle_marker_ca1ebecd9a634c65826706fb7502a9e1.bindTooltip(
+                `<div>
+                     Volcanic: Steamboat Springs
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2dd3712c4fd84f4186530cf3f5deb3aa = L.circleMarker(
+                [39.6500015, -107.0309982],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_986f771fb2cb4adea48a9b87cc347df1 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_f46e447c4fdd408c8e55061ede98e012 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+RG90c2Vybzo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIERvdHNlcm8mdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IERvdHNlcm88YnI+RWxldmF0aW9uOiAyMjMwLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM5LjY1MDAwMTUgLCAtMTA3LjAzMDk5ODJd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_986f771fb2cb4adea48a9b87cc347df1.setContent(i_frame_f46e447c4fdd408c8e55061ede98e012);
+        
+
+        circle_marker_2dd3712c4fd84f4186530cf3f5deb3aa.bindPopup(popup_986f771fb2cb4adea48a9b87cc347df1)
+        ;
+
+        
+    
+    
+            circle_marker_2dd3712c4fd84f4186530cf3f5deb3aa.bindTooltip(
+                `<div>
+                     Volcanic: Dotsero
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_712aba43fc934c6dbd9d512087fe7ee4 = L.circleMarker(
+                [37.9999008, -119.0309982],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_e2224210dbd4461484e3ebe89c21b77a = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_a5ae603d07e1444298cb1e598a0f163d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+TW9ubyBMYWtlIFZvbGMgRmllbGQ6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBNb25vIExha2UgVm9sYyBGaWVsZCZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogTW9ubyBMYWtlIFZvbGMgRmllbGQ8YnI+RWxldmF0aW9uOiAyMTIxLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM3Ljk5OTkwMDggLCAtMTE5LjAzMDk5ODJd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_e2224210dbd4461484e3ebe89c21b77a.setContent(i_frame_a5ae603d07e1444298cb1e598a0f163d);
+        
+
+        circle_marker_712aba43fc934c6dbd9d512087fe7ee4.bindPopup(popup_e2224210dbd4461484e3ebe89c21b77a)
+        ;
+
+        
+    
+    
+            circle_marker_712aba43fc934c6dbd9d512087fe7ee4.bindTooltip(
+                `<div>
+                     Volcanic: Mono Lake Volc Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae41727b16234d418d9060db2cfa0569 = L.circleMarker(
+                [38.9700012, -112.5009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_0197d475d5b9419b80537b4151ba3d27 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_dbc543c96bd44c02a5d11dc028fdae73 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+QmxhY2sgUm9jayBEZXNlcnQ6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBCbGFjayBSb2NrIERlc2VydCZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogQmxhY2sgUm9jayBEZXNlcnQ8YnI+RWxldmF0aW9uOiAxODAwLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM4Ljk3MDAwMTIgLCAtMTEyLjUwMDk5OTVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_0197d475d5b9419b80537b4151ba3d27.setContent(i_frame_dbc543c96bd44c02a5d11dc028fdae73);
+        
+
+        circle_marker_ae41727b16234d418d9060db2cfa0569.bindPopup(popup_0197d475d5b9419b80537b4151ba3d27)
+        ;
+
+        
+    
+    
+            circle_marker_ae41727b16234d418d9060db2cfa0569.bindTooltip(
+                `<div>
+                     Volcanic: Black Rock Desert
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2b152295cc4b42d3894c67c64a1b895e = L.circleMarker(
+                [37.8799019, -119.0009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_b78b61ac67d9443e81c1f9d64a1c9203 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_498c6c086dd440939bb24e3450977e4b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+TW9ubyBDcmF0ZXJzOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgTW9ubyBDcmF0ZXJzJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBNb25vIENyYXRlcnM8YnI+RWxldmF0aW9uOiAyNzk2LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM3Ljg3OTkwMTkgLCAtMTE5LjAwMDk5OTVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_b78b61ac67d9443e81c1f9d64a1c9203.setContent(i_frame_498c6c086dd440939bb24e3450977e4b);
+        
+
+        circle_marker_2b152295cc4b42d3894c67c64a1b895e.bindPopup(popup_b78b61ac67d9443e81c1f9d64a1c9203)
+        ;
+
+        
+    
+    
+            circle_marker_2b152295cc4b42d3894c67c64a1b895e.bindTooltip(
+                `<div>
+                     Volcanic: Mono Craters
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fd27c0affb0649c48660e07374f05520 = L.circleMarker(
+                [37.6918983, -119.0210037],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_3f1d724f9b6944f9ac43f2427a44e34f = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_8f4fb4a8e60e4fd8a9d7b52e76b6bb29 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+SW55byBDcmF0ZXJzOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgSW55byBDcmF0ZXJzJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBJbnlvIENyYXRlcnM8YnI+RWxldmF0aW9uOiAyNjI5LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM3LjY5MTg5ODMgLCAtMTE5LjAyMTAwMzdd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_3f1d724f9b6944f9ac43f2427a44e34f.setContent(i_frame_8f4fb4a8e60e4fd8a9d7b52e76b6bb29);
+        
+
+        circle_marker_fd27c0affb0649c48660e07374f05520.bindPopup(popup_3f1d724f9b6944f9ac43f2427a44e34f)
+        ;
+
+        
+    
+    
+            circle_marker_fd27c0affb0649c48660e07374f05520.bindTooltip(
+                `<div>
+                     Volcanic: Inyo Craters
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b20d8c0afad4d9f8659516541ae659d = L.circleMarker(
+                [37.6999016, -118.8710022],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_53bbcc44e71e432783fb583b56ea827d = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_e88d734769da4bd7994008050c7badd6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+TG9uZyBWYWxsZXk6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBMb25nIFZhbGxleSZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogTG9uZyBWYWxsZXk8YnI+RWxldmF0aW9uOiAzMzkwLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM3LjY5OTkwMTYgLCAtMTE4Ljg3MTAwMjJd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_53bbcc44e71e432783fb583b56ea827d.setContent(i_frame_e88d734769da4bd7994008050c7badd6);
+        
+
+        circle_marker_7b20d8c0afad4d9f8659516541ae659d.bindPopup(popup_53bbcc44e71e432783fb583b56ea827d)
+        ;
+
+        
+    
+    
+            circle_marker_7b20d8c0afad4d9f8659516541ae659d.bindTooltip(
+                `<div>
+                     Volcanic: Long Valley
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b8d9fe67fed0460e8e61d3c18399ecc3 = L.circleMarker(
+                [37.5798988, -119.0510025],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_ce03fccc0b4640d0a71c8704756f113f = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_e1311449ce7d470c8f246b425bc406c7 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+UmVkIENvbmVzOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgUmVkIENvbmVzJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBSZWQgQ29uZXM8YnI+RWxldmF0aW9uOiAyNzQ4LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM3LjU3OTg5ODggLCAtMTE5LjA1MTAwMjVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_ce03fccc0b4640d0a71c8704756f113f.setContent(i_frame_e1311449ce7d470c8f246b425bc406c7);
+        
+
+        circle_marker_b8d9fe67fed0460e8e61d3c18399ecc3.bindPopup(popup_ce03fccc0b4640d0a71c8704756f113f)
+        ;
+
+        
+    
+    
+            circle_marker_b8d9fe67fed0460e8e61d3c18399ecc3.bindTooltip(
+                `<div>
+                     Volcanic: Red Cones
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_832cb9972b7a46beafb904d3d3ad4e20 = L.circleMarker(
+                [37.0199013, -117.4509964],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_ca162920683a41b8872f0b6e52e023ec = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_4c02a8c6d00f4dd7a81a0e1943dd351e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+VWJlaGViZSBDcmF0ZXJzOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgVWJlaGViZSBDcmF0ZXJzJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBVYmVoZWJlIENyYXRlcnM8YnI+RWxldmF0aW9uOiA3NTIuMCBtZXRlcnMgPGJyPmxvY2F0aW9uOiBbMzcuMDE5OTAxMyAsIC0xMTcuNDUwOTk2NF0=" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_ca162920683a41b8872f0b6e52e023ec.setContent(i_frame_4c02a8c6d00f4dd7a81a0e1943dd351e);
+        
+
+        circle_marker_832cb9972b7a46beafb904d3d3ad4e20.bindPopup(popup_ca162920683a41b8872f0b6e52e023ec)
+        ;
+
+        
+    
+    
+            circle_marker_832cb9972b7a46beafb904d3d3ad4e20.bindTooltip(
+                `<div>
+                     Volcanic: Ubehebe Craters
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9274808383c047ca94874b10cbf9c30f = L.circleMarker(
+                [37.5800018, -112.6709976],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_a7219dd81f7c477386cf2ba182d3414e = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_8fe07ac72d944308acc084a9380689ea = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+TWFya2FndW50IFBsYXRlYXU6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBNYXJrYWd1bnQgUGxhdGVhdSZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogTWFya2FndW50IFBsYXRlYXU8YnI+RWxldmF0aW9uOiAyODQwLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM3LjU4MDAwMTggLCAtMTEyLjY3MDk5NzZd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_a7219dd81f7c477386cf2ba182d3414e.setContent(i_frame_8fe07ac72d944308acc084a9380689ea);
+        
+
+        circle_marker_9274808383c047ca94874b10cbf9c30f.bindPopup(popup_a7219dd81f7c477386cf2ba182d3414e)
+        ;
+
+        
+    
+    
+            circle_marker_9274808383c047ca94874b10cbf9c30f.bindTooltip(
+                `<div>
+                     Volcanic: Markagunt Plateau
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_16bfeeaef5c14a63abb5caf0efbd2347 = L.circleMarker(
+                [37.257, -113.6210022],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_73732986d6c3484fa5d9c706b97b0019 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_6194747d97f94082bdf346d33cae3f15 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+U2FudGEgQ2xhcmE6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBTYW50YSBDbGFyYSZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogU2FudGEgQ2xhcmE8YnI+RWxldmF0aW9uOiAxNDY1LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM3LjI1NyAsIC0xMTMuNjIxMDAyMl0=" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_73732986d6c3484fa5d9c706b97b0019.setContent(i_frame_6194747d97f94082bdf346d33cae3f15);
+        
+
+        circle_marker_16bfeeaef5c14a63abb5caf0efbd2347.bindPopup(popup_73732986d6c3484fa5d9c706b97b0019)
+        ;
+
+        
+    
+    
+            circle_marker_16bfeeaef5c14a63abb5caf0efbd2347.bindTooltip(
+                `<div>
+                     Volcanic: Santa Clara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e23ae4c2423f4df6beff1982c5affde6 = L.circleMarker(
+                [37.3279991, -112.401001],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_0cb4afd6595f4fadb4215050a6011e7c = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_6d03dd48be934e9b9f02539524b2bb8c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+QmFsZCBLbm9sbDo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIEJhbGQgS25vbGwmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IEJhbGQgS25vbGw8YnI+RWxldmF0aW9uOiAyMTM1LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM3LjMyNzk5OTEgLCAtMTEyLjQwMTAwMV0=" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_0cb4afd6595f4fadb4215050a6011e7c.setContent(i_frame_6d03dd48be934e9b9f02539524b2bb8c);
+        
+
+        circle_marker_e23ae4c2423f4df6beff1982c5affde6.bindPopup(popup_0cb4afd6595f4fadb4215050a6011e7c)
+        ;
+
+        
+    
+    
+            circle_marker_e23ae4c2423f4df6beff1982c5affde6.bindTooltip(
+                `<div>
+                     Volcanic: Bald Knoll
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_63eee1cf69c44342b534a861775dee78 = L.circleMarker(
+                [36.3578987, -118.3209991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_aa43b8225c944a14aaef9851f8c4b46a = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_f66f3512cb8f464dba5e48a405b1032d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+R29sZGVuIFRyb3V0IENyZWVrOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgR29sZGVuIFRyb3V0IENyZWVrJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBHb2xkZW4gVHJvdXQgQ3JlZWs8YnI+RWxldmF0aW9uOiAyODg2LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM2LjM1Nzg5ODcgLCAtMTE4LjMyMDk5OTFd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_aa43b8225c944a14aaef9851f8c4b46a.setContent(i_frame_f66f3512cb8f464dba5e48a405b1032d);
+        
+
+        circle_marker_63eee1cf69c44342b534a861775dee78.bindPopup(popup_aa43b8225c944a14aaef9851f8c4b46a)
+        ;
+
+        
+    
+    
+            circle_marker_63eee1cf69c44342b534a861775dee78.bindTooltip(
+                `<div>
+                     Volcanic: Golden Trout Creek
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81b3340a58c3475d988c74a663ea1625 = L.circleMarker(
+                [36.0298996, -117.8209991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_b9a58f93d52c4830a626fb00eca2f329 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_8ec153f5ac1e4c09b01a62d571c1eb92 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Q29zbyBWb2xjIEZpZWxkOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgQ29zbyBWb2xjIEZpZWxkJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBDb3NvIFZvbGMgRmllbGQ8YnI+RWxldmF0aW9uOiAyNDAwLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM2LjAyOTg5OTYgLCAtMTE3LjgyMDk5OTFd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_b9a58f93d52c4830a626fb00eca2f329.setContent(i_frame_8ec153f5ac1e4c09b01a62d571c1eb92);
+        
+
+        circle_marker_81b3340a58c3475d988c74a663ea1625.bindPopup(popup_b9a58f93d52c4830a626fb00eca2f329)
+        ;
+
+        
+    
+    
+            circle_marker_81b3340a58c3475d988c74a663ea1625.bindTooltip(
+                `<div>
+                     Volcanic: Coso Volc Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d4d7fcacff804d96a1c9dc4c2a848371 = L.circleMarker(
+                [36.3800011, -113.1309967],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_0c53aa69caaf4b5c964049572ec23afa = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_cbe79ca3aa914665bacbb3cbc3e1dfad = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+VWlua2FyZXQgRmllbGQ6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBVaW5rYXJldCBGaWVsZCZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogVWlua2FyZXQgRmllbGQ8YnI+RWxldmF0aW9uOiAxNTU1LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM2LjM4MDAwMTEgLCAtMTEzLjEzMDk5Njdd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_0c53aa69caaf4b5c964049572ec23afa.setContent(i_frame_cbe79ca3aa914665bacbb3cbc3e1dfad);
+        
+
+        circle_marker_d4d7fcacff804d96a1c9dc4c2a848371.bindPopup(popup_0c53aa69caaf4b5c964049572ec23afa)
+        ;
+
+        
+    
+    
+            circle_marker_d4d7fcacff804d96a1c9dc4c2a848371.bindTooltip(
+                `<div>
+                     Volcanic: Uinkaret Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a630e672fa424269867de6ec98b53374 = L.circleMarker(
+                [34.75, -116.6210022],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_6462949b52cb4e2484215d3748e6c72b = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_479755b9f48e4ceca040f2ec39a1727b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+TGF2aWMgTGFrZTo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIExhdmljIExha2UmdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IExhdmljIExha2U8YnI+RWxldmF0aW9uOiAxNDk1LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM0Ljc1ICwgLTExNi42MjEwMDIyXQ==" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_6462949b52cb4e2484215d3748e6c72b.setContent(i_frame_479755b9f48e4ceca040f2ec39a1727b);
+        
+
+        circle_marker_a630e672fa424269867de6ec98b53374.bindPopup(popup_6462949b52cb4e2484215d3748e6c72b)
+        ;
+
+        
+    
+    
+            circle_marker_a630e672fa424269867de6ec98b53374.bindTooltip(
+                `<div>
+                     Volcanic: Lavic Lake
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e55a7361101406aaef89e88a8de8545 = L.circleMarker(
+                [35.8699989, -106.5709991],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_b66bae75462241189127481d000f11ad = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_1130b168fcbf42da8f7b3db699014424 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+VmFsbGVzIENhbGRlcmE6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBWYWxsZXMgQ2FsZGVyYSZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogVmFsbGVzIENhbGRlcmE8YnI+RWxldmF0aW9uOiAzNDMwLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM1Ljg2OTk5ODkgLCAtMTA2LjU3MDk5OTFd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_b66bae75462241189127481d000f11ad.setContent(i_frame_1130b168fcbf42da8f7b3db699014424);
+        
+
+        circle_marker_4e55a7361101406aaef89e88a8de8545.bindPopup(popup_b66bae75462241189127481d000f11ad)
+        ;
+
+        
+    
+    
+            circle_marker_4e55a7361101406aaef89e88a8de8545.bindTooltip(
+                `<div>
+                     Volcanic: Valles Caldera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0a71503022764863b259affdc62eab22 = L.circleMarker(
+                [35.3699989, -111.5009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_ee137715112a4599821d22d397ef02ea = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_7aa22c621df44d9ebc22e317d81502f6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+U3Vuc2V0IENyYXRlcjo8L2g0PiA8YSBocmVmPSJodHRwczovL3d3dy5nb29nbGUuY29tL3NlYXJjaD9xPXZvbGNhbmljIFN1bnNldCBDcmF0ZXImdGJtPWlzY2giIHRhcmdldD0iX2JsYW5rIj5Hb29nbGUgSXQhPC9hPjxicj48YnI+IE5hbWU6IFN1bnNldCBDcmF0ZXI8YnI+RWxldmF0aW9uOiAyNDQ3LjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM1LjM2OTk5ODkgLCAtMTExLjUwMDk5OTVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_ee137715112a4599821d22d397ef02ea.setContent(i_frame_7aa22c621df44d9ebc22e317d81502f6);
+        
+
+        circle_marker_0a71503022764863b259affdc62eab22.bindPopup(popup_ee137715112a4599821d22d397ef02ea)
+        ;
+
+        
+    
+    
+            circle_marker_0a71503022764863b259affdc62eab22.bindTooltip(
+                `<div>
+                     Volcanic: Sunset Crater
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_94db7d83d4c845658e6ff346b9af1bd4 = L.circleMarker(
+                [34.5499992, -115.7809982],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_88978fec6d8648bc8ca3f6644549332d = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_9d87968286894393811edc536b19c884 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+QW1ib3k6PC9oND4gPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9zZWFyY2g/cT12b2xjYW5pYyBBbWJveSZ0Ym09aXNjaCIgdGFyZ2V0PSJfYmxhbmsiPkdvb2dsZSBJdCE8L2E+PGJyPjxicj4gTmFtZTogQW1ib3k8YnI+RWxldmF0aW9uOiAyODguMCBtZXRlcnMgPGJyPmxvY2F0aW9uOiBbMzQuNTQ5OTk5MiAsIC0xMTUuNzgwOTk4Ml0=" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_88978fec6d8648bc8ca3f6644549332d.setContent(i_frame_9d87968286894393811edc536b19c884);
+        
+
+        circle_marker_94db7d83d4c845658e6ff346b9af1bd4.bindPopup(popup_88978fec6d8648bc8ca3f6644549332d)
+        ;
+
+        
+    
+    
+            circle_marker_94db7d83d4c845658e6ff346b9af1bd4.bindTooltip(
+                `<div>
+                     Volcanic: Amboy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fb8c4ef1c514483d8daf03d69fcd50d8 = L.circleMarker(
+                [34.7999992, -108.0009995],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_8b8ccac7b7a14e61917732730e1babad = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_2d66beffef33405db27a4bf57e4ecc8e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+WnVuaS1CYW5kZXJhOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgWnVuaS1CYW5kZXJhJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBadW5pLUJhbmRlcmE8YnI+RWxldmF0aW9uOiAyNTUwLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzM0Ljc5OTk5OTIgLCAtMTA4LjAwMDk5OTVd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_8b8ccac7b7a14e61917732730e1babad.setContent(i_frame_2d66beffef33405db27a4bf57e4ecc8e);
+        
+
+        circle_marker_fb8c4ef1c514483d8daf03d69fcd50d8.bindPopup(popup_8b8ccac7b7a14e61917732730e1babad)
+        ;
+
+        
+    
+    
+            circle_marker_fb8c4ef1c514483d8daf03d69fcd50d8.bindTooltip(
+                `<div>
+                     Volcanic: Zuni-Bandera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8175a02b62dc4d40b7073f7670154a55 = L.circleMarker(
+                [33.7801018, -105.9309998],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ff402e5333744eb7b2e5b276e4e9217f);
+        
+    
+        var popup_f705337ab145458ba9356940303b2ba0 = L.popup({"maxWidth": 300});
+
+        
+            var i_frame_89f607e003ea4d6e887b3c46e9608e4b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+Q2Fycml6b3pvOjwvaDQ+IDxhIGhyZWY9Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoP3E9dm9sY2FuaWMgQ2Fycml6b3pvJnRibT1pc2NoIiB0YXJnZXQ9Il9ibGFuayI+R29vZ2xlIEl0ITwvYT48YnI+PGJyPiBOYW1lOiBDYXJyaXpvem88YnI+RWxldmF0aW9uOiAxNzMxLjAgbWV0ZXJzIDxicj5sb2NhdGlvbjogWzMzLjc4MDEwMTggLCAtMTA1LjkzMDk5OThd" width="300" style="border:none !important;" height="110"></iframe>`)[0];
+            popup_f705337ab145458ba9356940303b2ba0.setContent(i_frame_89f607e003ea4d6e887b3c46e9608e4b);
+        
+
+        circle_marker_8175a02b62dc4d40b7073f7670154a55.bindPopup(popup_f705337ab145458ba9356940303b2ba0)
+        ;
+
+        
+    
+    
+            circle_marker_8175a02b62dc4d40b7073f7670154a55.bindTooltip(
+                `<div>
+                     Volcanic: Carrizozo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_c8dd9281a62b4e8e8c9a5c66f3531cf4 = {
+                base_layers : {
+                    "stamenterrain" : tile_layer_100c7fc04f0343b6a6c953f6be69dd4f,
+                },
+                overlays :  {
+                    "Volcanoes" : feature_group_ff402e5333744eb7b2e5b276e4e9217f,
+                },
+            };
+            L.control.layers(
+                layer_control_c8dd9281a62b4e8e8c9a5c66f3531cf4.base_layers,
+                layer_control_c8dd9281a62b4e8e8c9a5c66f3531cf4.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_c11e8a73ad704360bbd08ead0bc18bef);
+        
+</script>
