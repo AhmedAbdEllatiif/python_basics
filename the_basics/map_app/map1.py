@@ -19,7 +19,7 @@ def color_picker(elevation):
         return 'red'
     
  
-# To build maker    
+# To build a marker    
 def markerBuilder(lat,lon,name,elevation):
     location = f'{lat} , {lon}' 
     html = f'<h4>{name}:</h4> <a href="https://www.google.com/search?q=volcanic {name}&tbm=isch" target="_blank">Google It!</a><br><br> Name: {name}<br>Elevation: {str(el)} meters <br>location: [{location}]'
