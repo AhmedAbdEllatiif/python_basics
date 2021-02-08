@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Title-->
+<title>Data Collector App</title>
+
+<!-- Head-->
+<head>
+    <link rel="stylesheet" href="../static/main.css" >
+</head>
+
+<!-- body-->
+<body>
+
+    
+    <div class="container">
+        <h1>Collecting height</h1>
+        <h3>Place the entires to get population statistics on height</h3>
+        <p class="errors">{{error_email}}</p>
+        <form action="{{('success')}}" method="POST">
+            <input name="email_name" title="Your email will be safe with us" placeholder="Enter your emial address" type="email" required><br>
+            <input name="height_name" title="Your data will be safe with us" placeholder="Enter your height in cm " type="number" min="50" max="300" step="0.01" required><br>   
+            
+            <button type="submit">Submit</button>       
+                 
+        </form>
+        
+        <form action="{{('upload')}}" enctype ="multipart/form-data"  method="POST">  
+            <input name = "file_name" type="file" >  
+            <button type="submit">Upload</button> 
+        </form> 
+
+
+        {% if btn %}
+            {% include btn %}
+        {% endif %}
+
+    </div>
+    
+
+</body>
+
+
+</html>
