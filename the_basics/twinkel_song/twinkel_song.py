@@ -1,4 +1,4 @@
-base_str = 'Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are.\n\n Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are. \n\n Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are.'
+base_str = 'Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are.\n\n '
 
 base_words = base_str.split()
 
@@ -10,13 +10,14 @@ def get_spaces(count):
     
 
 
-def let_sing_twinkle_twinkel():
+def song(index,repeats):
     
     f_sentences = []
     commna_repeat = 0
     dot_repeat = 0
-    song_repeat = 0
+
     add_spaces = True
+   
     
     for word in base_words: 
         
@@ -27,11 +28,12 @@ def let_sing_twinkle_twinkel():
             dot_repeat = dot_repeat + 1
             
             if dot_repeat == 2:
-                if song_repeat == 2:
-                    break 
-                f_sentences.append(get_spaces(32)+" 'Repeat' " + '\n\n')
+                if index + 1 == repeats:
+                     f_sentences.append("\n              >>>>>>>>>>..... End of Song .....<<<<<<<<<< \n\n")
+                else:
+                     f_sentences.append(get_spaces(32)+" 'Repeat' " + '\n\n')
+                
                 dot_repeat = 0
-                song_repeat = song_repeat + 1
                 add_spaces = True
             
         elif word[-1] == ',':
@@ -66,10 +68,16 @@ def let_sing_twinkle_twinkel():
 
     formatted_song = ''
 
+  
+    print(formatted_song.join(f_sentences))
 
-    print("\n              >>>>>>>>>>.....Lets Sing Twinkle,Twinkle Song.....<<<<<<<<<< \n\n",formatted_song.join(f_sentences))
 
-let_sing_twinkle_twinkel()
+def let_sing_twinkle_twinkel(repeats):
+    print("\n              >>>>>>>>>>.....Lets Sing Twinkle,Twinkle Song.....<<<<<<<<<< \n\n")
+    for i in range(repeats):
+        song(index = i,repeats= repeats)
+
+let_sing_twinkle_twinkel(repeats = 3)
     
         
 
