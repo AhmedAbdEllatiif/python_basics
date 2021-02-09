@@ -5,8 +5,8 @@ base_words = base_str.split()
 
 
 def get_spaces(count):
-    spaces = ' ' * count
-    return '\n' + spaces
+    spaces = '\t' * count
+    return '\n' + spaces 
     
 
 
@@ -31,7 +31,7 @@ def song(index,repeats):
                 if index + 1 == repeats:
                      f_sentences.append("\n              >>>>>>>>>>..... End of Song .....<<<<<<<<<< \n\n")
                 else:
-                     f_sentences.append(get_spaces(32)+" 'Repeat' " + '\n\n')
+                     f_sentences.append(get_spaces(5)+" 'Repeat' " + '\n\n')
                 
                 dot_repeat = 0
                 add_spaces = True
@@ -44,7 +44,7 @@ def song(index,repeats):
         elif commna_repeat == 4:
             add_spaces = True
             commna_repeat = 0
-            f_sentences.append(get_spaces(17))
+            f_sentences.append(get_spaces(2))
             f_sentences.append(word + " ")
         
         
@@ -52,12 +52,12 @@ def song(index,repeats):
         elif(commna_repeat == 3):
          
             if add_spaces:
-                f_sentences.append(get_spaces(8))
+                f_sentences.append(get_spaces(1))
                 f_sentences.append(word + " ")
                 add_spaces = False
             elif word[-1] == '!':
                 f_sentences.append(word + " ")
-                f_sentences.append(get_spaces(17))
+                f_sentences.append(get_spaces(2))
             else:
                 f_sentences.append(word + " ")
             
