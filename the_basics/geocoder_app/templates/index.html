@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Geocoder</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    
+    <div class="index_container">
+        <h1>
+            Super Geocoder
+        </h1>
+        
+        <p>
+            Please upload your CSV file.The values containing address should be in column named address or Address
+        </p>
+
+        <form  method=post enctype=multipart/form-data >
+            <input name="input_file_name" type="file" title="Choose File" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p>{{error_text}}</p>
+
+        {{table | safe}}
+
+        {% if downlaod %}
+            {% include downlaod %}
+        {% endif %}
+        
+        <br>
+        <small>{{thanks_text}}</small>
+
+        
+    </div>
+
+</body>
+</html>
